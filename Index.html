@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>تنزيل تطبيقي</title>
+  <meta charset="UTF-8">
+</head>
+<body style="text-align: center; font-family: Arial;">
+  <h1>مرحبًا بك!</h1>
+  <p>اضغط على الزر لتنزيل التطبيق:</p>
+  <a href="<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أفلامي</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .search-filter {
+      margin: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .search-filter input, .search-filter select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+    .category {
+      padding: 20px;
+    }
+    .category-title {
+      font-size: 24px;
+      color: red;
+      margin-bottom: 10px;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .movie-card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .movie-card img {
+      width: 100%;
+      height: auto;
+    }
+    .movie-info {
+      padding: 15px;
+    }
+    .movie-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: red;
+    }
+    .movie-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .movie-rating {
+      font-weight: bold;
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">أفلامي</div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">الأفلام</a>
+      <a href="#">التصنيفات</a>
+    </nav>
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="ابحث عن فيلم...">
+      <select id="categoryFilter">
+        <option value="all">كل الفئات</option>
+        <option value="arabic">عربي</option>
+        <option value="foreign">أجنبي</option>
+        <option value="korean">كوري</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="category">
+    <div class="category-title">جميع الأفلام</div>
+    <div class="movies" id="moviesContainer">
+      <!-- سيتم إدراج الأفلام هنا عبر الجافاسكريبت -->
+    </div>
+  </section>
+
+  <script>
+    const movies = [
+      { title: "الفيل الأزرق", description: "طبيب نفسي يواجه ماضٍ غامض...", rating: "8.1", category: "arabic", img: "https://via.placeholder.com/300x400" },
+      { title: "ولاد رزق", description: "مجموعة من الإخوة يدخلون عالم الجريمة.", rating: "7.8", category: "arabic", img: "https://via.placeholder.com/300x400" },
+      { title: "Inception", description: "زرع فكرة داخل الحلم...", rating: "8.8", category: "foreign", img: "https://via.placeholder.com/300x400" },
+      { title: "The Dark Knight", description: "باتمان ضد الجوكر...", rating: "9.0", category: "foreign", img: "https://via.placeholder.com/300x400" },
+      { title: "Parasite", description: "عائلة فقيرة تتسلل لعائلة غنية...", rating: "8.6", category: "korean", img: "https://via.placeholder.com/300x400" },
+      { title: "Train to Busan", description: "رحلة مليئة بالرعب...
+", rating: "7.6", category: "korean", img: "https://via.placeholder.com/300x400" }
+    ];
+
+    const container = document.getElementById('moviesContainer');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+
+    function renderMovies() {
+      const keyword = searchInput.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+      container.innerHTML = '';
+      movies.filter(movie => {
+        const matchesKeyword = movie.title.toLowerCase().includes(keyword);
+        const matchesCategory = selectedCategory === 'all' || movie.category === selectedCategory;
+        return matchesKeyword && matchesCategory;
+      }).forEach(movie => {
+        const card = `<div class="movie-card">
+          <img src="${movie.img}" alt="${movie.title}">
+          <div class="movie-info">
+            <div class="movie-title">${movie.title}</div>
+            <div class="movie-description">${movie.description}</div>
+            <div class="movie-rating">${movie.rating}/10</div>
+          </div>
+        </div>`;
+        container.innerHTML += card;
+      });
+    }
+
+    searchInput.addEventListener('input', renderMovies);
+    categoryFilter.addEventListener('change', renderMovies);
+
+    renderMovies();
+  </script>
+</body>
+</html>
+" download>
+    <button style="padding: 10px 20px; font-size: 16px;">تنزيل التطبيق</button>
+  </a>
+</body>
+</html>
